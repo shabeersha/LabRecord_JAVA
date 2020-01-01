@@ -52,9 +52,15 @@ void withdraw(){
 	int amount;
 	System.out.println("Enter the amount to Withdraw");
 	amount=s.nextInt();
+	
+	if(amount>balance){
+		System.out.println("Insufficient Balance.., Transaction Failed");
+	}
+	else{
 	balance=balance-amount;
 	System.out.println(amount+"Rupees Withdrawn From Your Account");
 	System.out.println("Available Balance is "+balance);
+	}
 }
 
 void bal(){

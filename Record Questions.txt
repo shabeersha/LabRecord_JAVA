@@ -4,23 +4,23 @@ Part A: Java Programming
 9. Write a program to merge two arrays.
 11. Write java program to find the sum of the digits and reverse of a given number using class and objects.
 13. Create a class ‘Account’ to represent a bank account. Write a program to deposit and withdraw amounts from the account. 
-15. Create a class Time with hh, mm, ss as data members. Write a java program to find the sum of two time intervals (Hint: Use object as parameter to function). 
+15--. Create a class Time with hh, mm, ss as data members. Write a java program to find the sum of two time intervals (Hint: Use object as parameter to function). 
 16. Write a program to count and display total number of objects created to a class (Hint: static members).
 17. Write a java program to find the volume of cube, rectangular box, cylinder using function overloading. 
 18. Create a class student with methods to read and display the student details. Create a derived class result with methods to read marks of 5 subjects. Write a java program to display the total and grade of students, creating objects of class result. 
 21. Write a program to demonstrate the order in which constructors are invoked in multilevel inheritance. 
 22. Create an abstract class shape with two data members and an abstract method area. Create two child classes rectangle and triangle. Write a program to display the area of the shapes. 
-24. Create a class factorial with a method that accept a number and return its factorial in a package P1. Using the factorial class, write a program to find the factorial of a number. 
+24--. Create a class factorial with a method that accept a number and return its factorial in a package P1. Using the factorial class, write a program to find the factorial of a number. 
 26. Write a multi thread java program for displaying numbers ascending and descending order (Hint: create thread by inheriting Thread class).
 27. Write a program to handle arithmetic exception. 
-28. Create a user defined exception ‘MinBalExp’ to be invoked when the read number is less than a pre-set value.
-30. Write a program to copy a file to another. Pass the file names as command line arguments. 
-31. Write a program to track keyboard events on an applet.
-32. Write an applet to display a rectangle with specified coordinate and colour passed as parameter from the HTML file. 
+28--. Create a user defined exception ‘MinBalExp’ to be invoked when the read number is less than a pre-set value.
+30--. Write a program to copy a file to another. Pass the file names as command line arguments. 
+31--. Write a program to track keyboard events on an applet.
+32--. Write an applet to display a rectangle with specified coordinate and colour passed as parameter from the HTML file. 
 33. Create an AWT application to add, remove items in a list box.
 35. Design a window to accept the qualifications of a user using checkboxes. 
 36. Create an applet for a displaying smiling face.  
-39. Create a database table employee (id, name, design, dept). Write a program to list the employees using JDBC. 
+39--. Create a database table employee (id, name, design, dept). Write a program to list the employees using JDBC. 
 
 
 
