@@ -15,7 +15,7 @@ class descending extends Thread
  public void run()
  {
   int i;
-  for(i=15;1>=0;i--)
+  for(i=15;i>=0;i--)
   { 
    System.out.println(i);
   }

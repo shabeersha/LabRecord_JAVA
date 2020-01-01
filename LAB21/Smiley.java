@@ -6,6 +6,8 @@ import java.awt.*;
 
 public class Smiley extends Applet
 {
+
+
  public void paint(Graphics g)
  {
   g.setColor(Color.yellow);
