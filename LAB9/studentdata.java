@@ -29,38 +29,28 @@ class student
 			System.out.println("Age:"+age);
 		}
 	}
-
-
-
 class result extends student{
 	
-	int mark1;
-	int mark2;
-	int mark3;
-	int mark4;
-	int mark5;
+	int[] mark=new int[5];
 	char grade;
 	Scanner input=new Scanner(System.in);
 
 	void read_result(){
-	
-		System.out.println("Enter the Mark of Sub1");
-		mark1=input.nextInt();
-		System.out.println("Enter the Mark of Sub2");
-		mark2=input.nextInt();
-		System.out.println("Enter the Mark of Sub3");
-		mark3=input.nextInt();
-		System.out.println("Enter the Mark of Sub4");
-		mark4=input.nextInt();
-		System.out.println("Enter the Mark of Sub5");
-		mark5=input.nextInt();
+
+
+		for(int i=0;i<5;i++){
+
+			System.out.println("Enter the Mark of Sub"+(i+1));
+			mark[i]=input.nextInt();
+
+			}
 		}
 	void print_result(){
 
 		System.out.println("Result is: \n");
-		System.out.println("Sub1:"+ mark1 +"\t Sub2:"+ mark2 +"\t Sub3:"+ mark3 +"\t Sub4:"+ mark4 +"\t Sub5:"+ mark5+"\n");
+		System.out.println("Sub1:"+ mark[0] +"\t Sub2:"+ mark[1] +"\t Sub3:"+ mark[2] +"\t Sub4:"+ mark[3] +"\t Sub5:"+ mark[4]+"\n");
 		
-		int totalmark= mark1+mark2+mark3+mark4+mark5;
+		int totalmark= mark[0]+mark[1]+mark[2]+mark[3]+mark[4];
 		System.out.println("Total Mark is:"+totalmark);
 		int percentage=(totalmark*100)/500;
 		System.out.println("percentage is:"+percentage+"%");
@@ -86,17 +76,8 @@ class result extends student{
 		else if(percentage<39){
 			System.out.println("Grade: Failed...!");
 			}
-		
-		
 		}
-
-
-	
 	}
-
-
-
-
 class studentdata
 	{
 		public static void main(String args[]) {
@@ -105,27 +86,19 @@ class studentdata
 
 			while(true){
 				
-				System.out.println("\n \n 1.Enter Student Details \n 2.Enter The Marks Of Students \n 3.Print The Details of Student \n 4.Print The Marks of Student \n 5.Enter Student's Details + Marks \n 6.Print Student's Details + Marks \n 7.Exit \n Enter Your Choice \n");
+				System.out.println("\n \n\n 1.Enter Student's Details + Marks \n 2.Print Student's Details + Marks \n 3.Exit \n Enter Your Choice \n");
 				int ch;
 				ch=in.nextInt();
 				
 				switch(ch){
 
 					 case 1:datas0.read_details();
-						break;
-					 case 2:datas0.read_result();
-						break;
-					 case 3:datas0.print_details();
-						break;
-					 case 4:datas0.print_result();
-						break;
-					 case 5:datas0.read_details();
 						datas0.read_result();
 						break;
-					 case 6:datas0.print_details();
+					 case 2:datas0.print_details();
 						datas0.print_result();
 						break;
-					 case 7:System.exit(0);
+					 case 3:System.exit(0);
 						break;
 					 default:System.out.println("Invalid Entry");
 					}
